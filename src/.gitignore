@@ -1,0 +1,8 @@
+# Ignore the compiled executable
+main.exe
+
+# Ignore VS Code local settings if you ever create them
+.vscode/
+
+# Optional: Ignore the heavy .a library file if you want others to build it themselves
+# lib/libglfw3.a
