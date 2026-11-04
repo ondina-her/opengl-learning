@@ -6,10 +6,16 @@
 #include <iostream>
 
 // Callback function to adjust the viewport when the window is resized 
-    void framebuffer_size_callback(GLFWwindow* window, int width, int height)
-    {
-        glViewport(0, 0, width, height);
-    }
+void framebuffer_size_callback(GLFWwindow* window, int width, int height)
+{
+    glViewport(0, 0, width, height);
+}
+
+void processInput(GLFWwindow *window)
+{
+    if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
+        glfwSetWindowShouldClose(window, true);
+}
 
 // settings
 const unsigned int SCR_WIDTH = 800;
@@ -56,6 +62,10 @@ int main()
     // Main render loop
     while (!glfwWindowShouldClose(window))
     {
+
+        // Process input
+        processInput(window);
+
         // Clear the screen with a color
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
