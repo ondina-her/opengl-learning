@@ -13,7 +13,7 @@ link_directories(lib)
 # HERE IS WHERE YOU CHOOSE WHICH MAIN.CPP TO RUN
 # Switch between "src/01_hello_opengl/main.cpp" and "src/02_hello_triangle/main.cpp"
 add_executable(main 
-    src/02_hello_triangle/main.cpp 
+    src/03_2Triangles/main.cpp 
     src/glad.c
 )
 
