@@ -1,4 +1,4 @@
-//g++ src/10_offSet/main.cpp src/glad.c -Iinclude -Llib -lglfw3 -lopengl32 -lgdi32 -o main.exe
+//g++ src/11_outputVert/main.cpp src/glad.c -Iinclude -Llib -lglfw3 -lopengl32 -lgdi32 -o main.exe
 //./main.exe
 
 #include <glad/glad.h>
